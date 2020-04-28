@@ -772,6 +772,9 @@ function scoreSelected() {
       }
       return 0;
     }
+    if (tmpDice[0]==tmpDice[2] && tmpDice[3]==tmpDice[5]) {
+      return 250;
+    }
     if (tmpDice[1]==tmpDice[5]) {
       if (tmpDice[0]==5) {
         return 205;
@@ -790,9 +793,6 @@ function scoreSelected() {
     if (tmpDice[0] != tmpDice[1] && tmpDice[1] != tmpDice[2] && tmpDice[2] != tmpDice[3] &&
       tmpDice[3] != tmpDice[4] && tmpDice[4] !=tmpDice[5]) {
       return 150;
-    }
-    if (tmpDice[0]==tmpDice[2] && tmpDice[3]==tmpDice[5]) {
-      return 250;
     }
     if (tmpDice[0]==tmpDice[1] && tmpDice[2]==tmpDice[3] && tmpDice[4]==tmpDice[5]) {
       return 150;
