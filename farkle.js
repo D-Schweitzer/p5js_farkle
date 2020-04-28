@@ -781,6 +781,12 @@ function scoreSelected() {
       }
       return 0;
     }
+    if(tmpDice[1]==tmpDice[4] && tmpDice[0]==1 &&tmpDice[5]==5){
+      return 115;
+    }
+    if(tmpDice[2]==tmpDice[5] && tmpDice[0]==1 && tmpDice[1]==5){
+      return 115;
+    }
     if (tmpDice[0] != tmpDice[1] && tmpDice[1] != tmpDice[2] && tmpDice[2] != tmpDice[3] &&
       tmpDice[3] != tmpDice[4] && tmpDice[4] !=tmpDice[5]) {
       return 150;
